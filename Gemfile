@@ -1,12 +1,8 @@
 source 'http://rubygems.org'
 
-gem 'spree', '~> 1.3.2'
+gem 'spree', '~> 2.0'
 
-if RUBY_VERSION < "1.9"
-  gem "ruby-debug"
-else
-  gem "ruby-debug19"
-end
+gem "debugger"
 
 group :test do
   gem 'rspec-rails', '2.12.0'
@@ -20,5 +16,7 @@ end
 
 group :assets do
   gem 'coffee-rails'
+  gem 'jquery-validation-rails'
 end
+
 gemspec
